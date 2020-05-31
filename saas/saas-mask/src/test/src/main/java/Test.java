@@ -1,5 +1,5 @@
-import com.skyscraper.saas.mask.annotation.Desensitized;
-import com.skyscraper.saas.mask.enums.SensitiveTypeEnum;
+import com.skyscraper.saas.annotation.Desensitized;
+import com.skyscraper.saas.enums.SensitiveTypeEnum;
 
 /**
  * create by sumerian on 2020/5/31

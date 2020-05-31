@@ -1,8 +1,8 @@
-package com.skyscraper.saas.mask.utils;
+package com.skyscraper.saas.utils;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
-import com.skyscraper.saas.mask.annotation.Desensitized;
+import com.skyscraper.saas.annotation.Desensitized;
 import org.apache.commons.lang3.StringUtils;
 import java.lang.reflect.*;
 import java.util.*;

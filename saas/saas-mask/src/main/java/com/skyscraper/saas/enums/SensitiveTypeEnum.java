@@ -1,4 +1,4 @@
-package com.skyscraper.saas.mask.enums;
+package com.skyscraper.saas.enums;
 
 /**
  * @author huyuyang@lxfintech.com

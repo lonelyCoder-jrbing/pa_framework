@@ -1,8 +1,8 @@
-package com.skyscraper.saas.mask.annotation;
+package com.skyscraper.saas.annotation;
 
 ;
 
-import com.skyscraper.saas.mask.enums.SensitiveTypeEnum;
+import com.skyscraper.saas.enums.SensitiveTypeEnum;
 
 import java.lang.annotation.*;
 

@@ -1,4 +1,4 @@
-package com.skyscraper.saas.mask.utils;
+package com.skyscraper.saas.utils;
 
 import com.alibaba.fastjson.JSON;
 import org.apache.commons.lang3.StringUtils;
