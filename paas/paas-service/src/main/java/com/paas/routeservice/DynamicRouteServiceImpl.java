@@ -1,22 +1,13 @@
-package web.paasapi.web.dynamicroute.route;
+package com.paas.routeservice;
 
-import com.alibaba.fastjson.JSON;
-import com.skyscraper.paas.paas.dynamicroute.model.GatewayPredicateDefinition;
-import com.skyscraper.paas.paas.dynamicroute.model.GatewayRouteDefinition;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.event.RefreshRoutesEvent;
-import org.springframework.cloud.gateway.handler.predicate.PredicateDefinition;
 import org.springframework.cloud.gateway.route.RouteDefinition;
 import org.springframework.cloud.gateway.route.RouteDefinitionWriter;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationEventPublisherAware;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
-
-import java.net.URI;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 
 @Service

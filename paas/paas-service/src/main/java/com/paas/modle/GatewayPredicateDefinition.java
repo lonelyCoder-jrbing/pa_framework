@@ -1,4 +1,4 @@
-package web.paasapi.web.dynamicroute.model;
+package com.paas.modle;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

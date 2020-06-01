@@ -9,12 +9,12 @@
         <module>paas-api</module>
         <module>paas-jpa</module>
     </modules>
-<!--    <parent>-->
-<!--        <groupId>org.springframework.boot</groupId>-->
-<!--        <artifactId>spring-boot-starter-parent</artifactId>-->
-<!--        <version>2.0.4.RELEASE</version>-->
-<!--        <relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
-<!--    </parent>-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.4.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
     <groupId>com.skyscraper.paas</groupId>
     <artifactId>paas</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -26,56 +26,10 @@
         <spring-nacos.discovery.version>0.2.1.RELEASE</spring-nacos.discovery.version>
         <java.version>1.8</java.version>
     </properties>
-    <dependencyManagement>
-        <dependencies>
 
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-                <version>${spring-nacos.discovery.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-alibaba-nacos-config -->
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-                <version>0.2.2.RELEASE</version>
-            </dependency>
-
-        </dependencies>
-    </dependencyManagement>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-        </dependency>
 
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-gateway</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
 
     <build>

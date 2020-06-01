@@ -1,4 +1,4 @@
-package web.paasapi.web.dynamicroute.config;
+package com.paas.config;
 
 import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;

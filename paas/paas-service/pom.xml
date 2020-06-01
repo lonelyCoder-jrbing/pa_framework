@@ -10,6 +10,84 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>paas-service</artifactId>
+    <groupId>com.skyscraper.paas.service</groupId>
+    <properties>
+        <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+        <spring-nacos.discovery.version>0.2.1.RELEASE</spring-nacos.discovery.version>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+                <version>${spring-nacos.discovery.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-alibaba-nacos-config -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+                <version>0.2.2.RELEASE</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
 
 
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-alibaba-nacos-config -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+<!--            <exclusions>-->
+<!--                <exclusion>-->
+<!--                    <groupId>org.springframework.boot</groupId>-->
+<!--                    <artifactId>spring-boot-starter-web</artifactId>-->
+<!--                </exclusion>-->
+<!--                <exclusion>-->
+<!--                    <groupId>org.springframework.boot</groupId>-->
+<!--                    <artifactId>spring-boot-starter-webflux</artifactId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter</artifactId>-->
+<!--        </dependency>-->
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!--引入paas-jpa-->
+        <dependency>
+            <groupId>com.skyscraper.jpa</groupId>
+            <artifactId>jpa</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+
+
+
+    </dependencies>
 </project>
