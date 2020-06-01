@@ -9,6 +9,12 @@
         <module>saas-mybatis</module>
         <module>saas-signature</module>
         <module>saas-es</module>
+        <!--获取http请求过来的traceid-->
+        <module>saas-trace</module>
+        <!--写一些常见的工具类，作为jar包为其他微服务提供服务-->
+        <module>saas-common</module>
+<!--        dubbo-->
+        <module>saas-dubbo</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -89,5 +95,16 @@
             </plugin>
         </plugins>
     </build>
+    <!--    <distributionManagement>-->
+    <!--        <repository>-->
+    <!--            <id>maven-releases</id>-->
+    <!--            <url></url>-->
+    <!--        </repository>-->
+    <!--        <snapshotRepository>-->
+    <!--            <id></id>-->
+    <!--            <url></url>-->
+    <!--        </snapshotRepository>-->
+
+    <!--    </distributionManagement>-->
 
 </project>
