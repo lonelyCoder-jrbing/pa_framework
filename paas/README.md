@@ -13,3 +13,14 @@
     3.rabbitmq 提供消息队列的服务
     4.flink.flink提供实时计算的功能，在paas上启动器服务，数据通过kafka或者rabbit发送过来进行实时计算，
     将计算完成的数据同样通过kafka或者nacos的方式发送到业务模块
+    
+    
+    
+    paas-api 为外部系统提供dubbo或者其他的api服务
+    
+    paas-jps 负责数据库的持久化
+    
+    paas-service 是paas-web中的业务层实现
+    
+    paas-web 提供一些web服务例如分布式系统的登录等
+    

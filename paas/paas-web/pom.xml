@@ -1,30 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>paas</artifactId>
+        <groupId>com.skyscraper.paas</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
-    <packaging>pom</packaging>
-    <modules>
-        <module>paas-service</module>
-        <module>paas-web</module>
-        <module>paas-api</module>
-        <module>paas-jpa</module>
-    </modules>
-<!--    <parent>-->
-<!--        <groupId>org.springframework.boot</groupId>-->
-<!--        <artifactId>spring-boot-starter-parent</artifactId>-->
-<!--        <version>2.0.4.RELEASE</version>-->
-<!--        <relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
-<!--    </parent>-->
-    <groupId>com.skyscraper.paas</groupId>
-    <artifactId>paas</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>paas</name>
-    <description>platform as a service</description>
 
+    <artifactId>paas-web</artifactId>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     <properties>
-        <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
-        <spring-nacos.discovery.version>0.2.1.RELEASE</spring-nacos.discovery.version>
-        <java.version>1.8</java.version>
+        <spring-boot.version>2.3.0.RELEASE</spring-boot.version>
+        <!--        &lt;!&ndash;        <spring-cloud.version>2.0.4</spring-cloud.version>&ndash;&gt;-->
+        <!--        <nacos.version>1.2.0</nacos.version>-->
+        <!--        <java.version>1.8</java.version>-->
+        <!--        <dubbo.version>2.6.5</dubbo.version>-->
+        <!--        <dubbo-registry-nacos.version>0.0.1</dubbo-registry-nacos.version>-->
+        <!--        <dubbo-spring-context-support.version>1.0.2</dubbo-spring-context-support.version>-->
+        <!--        <dubbo-spring-boot-starter.version>0.2.1.RELEASE</dubbo-spring-boot-starter.version>-->
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -50,8 +56,11 @@
 
         </dependencies>
     </dependencyManagement>
-
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
@@ -76,15 +85,12 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>2.2.6.RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
