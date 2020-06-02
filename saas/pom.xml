@@ -13,7 +13,7 @@
         <module>saas-trace</module>
         <!--写一些常见的工具类，作为jar包为其他微服务提供服务-->
         <module>saas-common</module>
-<!--        dubbo-->
+        <!--        dubbo-->
         <module>saas-dubbo</module>
     </modules>
     <parent>
@@ -88,23 +88,43 @@
     </dependencies>
 
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>repackage</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.6.1</version>
+                    <configuration>
+                        <skipMain>false</skipMain>
+                        <skip>false</skip>
+                        <source>1.8</source>
+                        <target>1.8</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
     </build>
-    <!--    <distributionManagement>-->
-    <!--        <repository>-->
-    <!--            <id>maven-releases</id>-->
-    <!--            <url></url>-->
-    <!--        </repository>-->
-    <!--        <snapshotRepository>-->
-    <!--            <id></id>-->
-    <!--            <url></url>-->
-    <!--        </snapshotRepository>-->
+    <distributionManagement>
+        <repository>
+            <id>localRepository</id>
+            <url>file:D:\Java\maven\repository</url>
+        </repository>
+        <!--            <snapshotRepository>-->
+        <!--                <id>maven-snapshots</id>-->
+        <!--                <url>D:\Java\maven\repository\maven-snapshots</url>-->
+        <!--            </snapshotRepository>-->
 
-    <!--    </distributionManagement>-->
+    </distributionManagement>
 
 </project>

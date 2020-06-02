@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.skyscraper.saas</groupId>
     <version>0.0.1</version>
-    <artifactId>saas-trace</artifactId>
+    <artifactId>saas-es</artifactId>
 
 
 </project>
