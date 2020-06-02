@@ -57,5 +57,15 @@
             </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+        <repository>
+            <id>localRepository</id>
+            <url>file:D:\Java\maven\repository</url>
+        </repository>
+        <!--            <snapshotRepository>-->
+        <!--                <id>maven-snapshots</id>-->
+        <!--                <url>D:\Java\maven\repository\maven-snapshots</url>-->
+        <!--            </snapshotRepository>-->
 
+    </distributionManagement>
 </project>

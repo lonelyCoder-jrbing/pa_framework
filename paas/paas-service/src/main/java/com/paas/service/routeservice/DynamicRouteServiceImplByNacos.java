@@ -9,6 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.cloud.gateway.route.RouteDefinition;
 import org.springframework.context.annotation.Bean;
@@ -19,7 +20,7 @@ import java.util.concurrent.Executor;
 
 @Component
 @RefreshScope
-public class DynamicRouteServiceImplByNacos {
+public class DynamicRouteServiceImplByNacos implements CommandLineRunner {
 
     private static Logger logger = LoggerFactory.getLogger(DynamicRouteServiceImplByNacos.class);
 
@@ -88,4 +89,8 @@ public class DynamicRouteServiceImplByNacos {
         }
     }
 
+    @Override
+    public void run(String... args) throws Exception {
+        dynamicRouteByNacosListener(dataId,group,serverAddr);
+    }
 }
