@@ -1,7 +1,7 @@
-package web.paasapi.web.dynamicroute.routecontroller;
+package com.paas.web.dynamicroute;
 
-import com.paas.modle.GatewayPredicateDefinition;
-import com.paas.modle.GatewayRouteDefinition;
+import com.paas.service.modle.GatewayPredicateDefinition;
+import com.paas.service.modle.GatewayRouteDefinition;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -9,7 +9,7 @@ import org.springframework.cloud.gateway.handler.predicate.PredicateDefinition;
 import org.springframework.cloud.gateway.route.RouteDefinition;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
-import com.paas.routeservice.DynamicRouteServiceImpl;
+import com.paas.service.routeservice.DynamicRouteServiceImpl;
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +19,7 @@ import java.util.List;
 @RefreshScope
 public class RouteController {
 
-//    @Autowired
+    @Autowired(required = false)
     private DynamicRouteServiceImpl dynamicRouteService;
 
     @Value("${nacos.dataId}")

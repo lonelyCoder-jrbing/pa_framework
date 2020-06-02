@@ -1,22 +1,22 @@
-package com.paas.modle;
+package com.paas.service.modle;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
- * 过滤器定义模型
+ * 路由断言定义模型
  */
-public class GatewayFilterDefinition {
+public class GatewayPredicateDefinition {
 
     /**
-     * Filter Name
+     * 断言对应的Name
      */
     private String name;
 
     /**
-     * 对应的路由规则
+     * 配置的断言规则
      */
-    private Map<String, String> args = new LinkedHashMap<>();
+    private Map<String, String> args = new LinkedHashMap<String, String>();
 
     public String getName() {
         return name;

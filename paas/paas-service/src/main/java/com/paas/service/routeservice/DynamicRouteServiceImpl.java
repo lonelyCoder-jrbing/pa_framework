@@ -1,4 +1,4 @@
-package com.paas.routeservice;
+package com.paas.service.routeservice;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.event.RefreshRoutesEvent;
