@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <modules>
-        <module>paas-service</module>
-        <module>paas-web</module>
         <module>paas-api</module>
         <module>paas-jpa</module>
+        <module>paas-service</module>
+        <module>paas-web</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
