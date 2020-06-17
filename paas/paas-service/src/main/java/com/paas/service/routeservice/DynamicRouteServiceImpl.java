@@ -8,7 +8,11 @@ import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationEventPublisherAware;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
-
+/**
+ * create by sumerian on 2020/6/2
+ * <p>
+ * desc: gateway 路由的增删改查
+ **/
 
 @Service
 public class DynamicRouteServiceImpl implements ApplicationEventPublisherAware {

@@ -30,4 +30,8 @@
 需要掌握的技能点：
    1.当当网的elastic-job 定时任务的实现原理
    2.f5的监控原理
-   
+思考：
+   如何将flink剥离出来一个服务？
+    
+   注意slf4j中的MDC的使用方法，可以用来存储traceId
+   elastic底层还是使用的是quartz，通过zookeeper来给job动态的添加节点。

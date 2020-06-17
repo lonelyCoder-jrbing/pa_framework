@@ -17,7 +17,11 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.concurrent.Executor;
-
+/**
+ * create by sumerian on 2020/6/2
+ * <p>
+ * desc: nacos 动态刷新配置
+ **/
 @Component
 @RefreshScope
 public class DynamicRouteServiceImplByNacos implements CommandLineRunner {

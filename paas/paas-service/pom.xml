@@ -96,7 +96,12 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.44</version>
         </dependency>
-
+<!--         kafka start-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.kafka</groupId>-->
+<!--            <artifactId>spring-kafka</artifactId>-->
+<!--&lt;!&ndash;                        <version>2.3.7</version>&ndash;&gt;-->
+<!--        </dependency>-->
     </dependencies>
     <build>
         <plugins>
