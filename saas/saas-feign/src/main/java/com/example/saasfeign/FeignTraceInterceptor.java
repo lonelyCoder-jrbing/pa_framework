@@ -10,7 +10,7 @@ import java.util.UUID;
 /**
  * create by sumerian on 2020/6/17
  * <p>
- * desc:
+ * desc: 给
  **/
 
 public class FeignTraceInterceptor implements RequestInterceptor {
@@ -21,6 +21,7 @@ public class FeignTraceInterceptor implements RequestInterceptor {
         if (null == headerTrace) {
             return;
         }
+        requestTemplate.header("traceId", traceId());
     }
 
     /***
