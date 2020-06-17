@@ -43,7 +43,6 @@ public class LoadbalancedRestTemplateConfig {
     @DubboTransported
     public RestTemplate restTemplate() {
         return new RestTemplate();
-
     }
 
 

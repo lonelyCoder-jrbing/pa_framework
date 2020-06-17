@@ -9,4 +9,8 @@
      4.自定义的注解
      5.电子签章
      
+     
+ 注意：  starter中的类中的模块是没有配置文件的，但是可以通过spring注入的方式进行注入，将将配置文件的信息，
+ 注入到配置信息类中。
+ mvn clean package -U -Dmaven.test.skip=true 跳过测试进行清理打包。
      .....
