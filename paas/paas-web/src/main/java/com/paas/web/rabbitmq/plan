@@ -1,0 +1,2 @@
+1.使用rabbitmqTemplate 和 AMQPTemplate 进行消息的发送，
+  并且了解两者的不同，重点了解rabbitmqTemplate原理

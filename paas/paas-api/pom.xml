@@ -7,10 +7,9 @@
         <groupId>com.skyscraper.paas</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>paas-api</groupId>
-    <artifactId>api</artifactId>
+    <artifactId>paas-api</artifactId>
+    <groupId>com.skyscraper.paas.api</groupId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>api</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>

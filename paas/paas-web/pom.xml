@@ -23,6 +23,11 @@
             <version>0.0.1</version>
             <groupId>com.skyscraper.paas.service</groupId>
         </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+        </dependency>
     </dependencies>
 
 </project>

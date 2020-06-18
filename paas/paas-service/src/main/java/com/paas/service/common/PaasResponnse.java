@@ -1,5 +1,6 @@
 package com.paas.service.common;
 
+import com.paas.service.common.exception.ExceptionCode;
 import lombok.Data;
 
 /**

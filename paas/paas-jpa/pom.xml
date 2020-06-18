@@ -7,10 +7,9 @@
         <groupId>com.skyscraper.paas</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>com.skyscraper.jpa</groupId>
-    <artifactId>jpa</artifactId>
+    <groupId>com.skyscraper.paas.jpa</groupId>
+    <artifactId>paas-jpa</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>jpa</name>
     <description>paas-api</description>
 
     <properties>
@@ -19,8 +18,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>paas-api</groupId>
-            <artifactId>api</artifactId>
+            <groupId>com.skyscraper.paas.api</groupId>
+            <artifactId>paas-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>

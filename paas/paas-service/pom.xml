@@ -7,11 +7,7 @@
         <groupId>com.skyscraper.paas</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <!--    <parent>-->
-    <!--        <groupId>org.springframework.boot</groupId>-->
-    <!--        <artifactId>spring-boot-starter-parent</artifactId>-->
-    <!--        <version>2.0.4.RELEASE</version>-->
-    <!--    </parent>-->
+
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>paas-service</artifactId>
@@ -77,8 +73,8 @@
 
         <!--引入paas-jpa-->
         <dependency>
-            <groupId>com.skyscraper.jpa</groupId>
-            <artifactId>jpa</artifactId>
+            <groupId>com.skyscraper.paas.jpa</groupId>
+            <artifactId>paas-jpa</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
