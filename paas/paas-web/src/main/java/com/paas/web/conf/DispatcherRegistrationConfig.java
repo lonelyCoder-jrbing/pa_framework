@@ -1,4 +1,4 @@
-package com.paas.web.conf.exception;
+package com.paas.web.conf;
 
 /**
  * create by sumerian on 2020/6/18

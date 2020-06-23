@@ -13,10 +13,10 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * create by sumerian on 2020/6/18
  * <p>
- * desc:
+ * desc:使用ExceptionHandler应用到所有@RequestMapping注解的方法，处理发生的异常。
  **/
 
-@ControllerAdvice
+//@ControllerAdvice
 public class GlobalExceptionHandler {
 
         private static final Logger logger = LoggerFactory.getLogger(GlobalExceptionHandler.class);

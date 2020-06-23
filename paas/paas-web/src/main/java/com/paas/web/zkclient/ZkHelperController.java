@@ -6,9 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -42,7 +41,10 @@ public class ZkHelperController {
     public String dataPath(String path) throws Exception {
         return new String(operation.getZkClient().getData().forPath(path), "UTF-8");
     }
-
+    @GetMapping("/demo")
+    public String demo(String path) throws Exception {
+        return new String("UTF-8");
+    }
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
@@ -50,6 +52,15 @@ public class ZkHelperController {
         private String path;
         private List<ZKPath> children;
     }
+    @Data
+    @AllArgsConstructor
+    @NoArgsConstructor
+    public static class Req{
+        private String path;
+
+    }
+
+
 
     /****
      * 递归查询path下的所有子节点
@@ -57,9 +68,9 @@ public class ZkHelperController {
      * @return
      * @throws Exception
      */
-    @GetMapping("/treePath")
-    public List<ZKPath> treePath(String path) throws Exception {
-        List<ZKPath> paths = findPath(path).stream().map(str -> new ZKPath(Objects.equals(path, "/") ? "" : path + "/" + str, Lists.newArrayList()))
+    @PostMapping("/treePath")
+    public List<ZKPath> treePath(@RequestBody Req path) throws Exception {
+        List<ZKPath> paths = findPath(path.getPath()).stream().map(str -> new ZKPath(Objects.equals(path.getPath(), "/") ? "" : path + "/" + str, Lists.newArrayList()))
                 .collect(Collectors.toList());
      for(ZKPath zkPath:paths){
         getNode(zkPath);

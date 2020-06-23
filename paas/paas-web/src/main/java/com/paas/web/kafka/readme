@@ -1,0 +1,1 @@
+kafka的配置信息在naco上，要使用的时候直接创建producer和consumer就行。

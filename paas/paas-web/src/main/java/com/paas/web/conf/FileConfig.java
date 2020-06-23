@@ -1,4 +1,4 @@
-package com.paas.web.conf.exception;
+package com.paas.web.conf;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
