@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 /**
  * create by sumerian on 2020/6/18
  * <p>
- * desc:拦截带有@RestController注解的类中的方法
+ * desc:拦截带有@RestController注解的类中的方法，添加打印日志捕获异常的功能
  **/
 
 @Aspect
