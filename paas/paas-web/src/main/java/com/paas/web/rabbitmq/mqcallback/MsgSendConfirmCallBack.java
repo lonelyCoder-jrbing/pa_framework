@@ -21,7 +21,5 @@ public class MsgSendConfirmCallBack implements RabbitTemplate.ConfirmCallback {
         }
     }
 
-    public static void main(String[] args) {
-        new MsgSendConfirmCallBack();
-    }
+
 }

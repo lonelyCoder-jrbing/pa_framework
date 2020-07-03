@@ -7,14 +7,12 @@ import org.springframework.boot.web.servlet.MultipartConfigFactory;
 /**
  * create by sumerian on 2020/6/18
  * <p>
- * desc:
+ * desc:配置文件上传大小
  **/
 @Configuration
 public class FileConfig {
     private static final int maxFileSize = 10;
-        /**
-         * 配置文件上传大小
-         */
+
         @Bean
         public MultipartConfigElement multipartConfigElement(){
             MultipartConfigFactory factory = new MultipartConfigFactory();

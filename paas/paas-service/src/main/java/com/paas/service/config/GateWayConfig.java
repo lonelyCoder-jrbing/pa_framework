@@ -4,7 +4,11 @@ import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
+/**
+ * create by sumerian on 2020/6/2
+ *
+ * desc:
+ **/
 @Configuration
 public class GateWayConfig {
     /**
