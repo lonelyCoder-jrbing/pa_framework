@@ -34,7 +34,7 @@ public class GlobalTransactionConfig {
      * 5.*(..)*号表示所有方法名,..表示所有类型的参数
      */
     private static final String POITCUT_EXPRESSION = "@within(org.springframework.stereotype.Service) && execution(public * *(..))";
-    @Autowired(required = false)
+    @Autowired
     private PlatformTransactionManager platformTransactionManager;
 
     @Bean
